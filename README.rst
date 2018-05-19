@@ -1,5 +1,5 @@
 ===============================
-wx-phoenix-installer
+wxpython4-linux-installer
 ===============================
 
 **An unofficial wxPython Phoenix installer.**
@@ -36,13 +36,10 @@ TODO:
 
 Example setup.py
 
-.. image:: https://github.com/swprojects/Zippy-Ip-Scanner/raw/master/resources/images/screen.png?raw=true
-         :align: center
-
 Installation
 ============
 
-        pip: **pip install wxpython4-linux-installer**
+        **pip install wxpython4-linux-installer**
 
 .. _pypi: https://pypi.org/project/wx/#description
 
