@@ -40,7 +40,7 @@ __spec__['Ubuntu 16.04'] = {
                      'libwebkitgtk-3.0-0'
                      'libwebkitgtk-3.0-dev'
                      ], 
-    'pkg_install': 'apt install'
+    'pkg_install': ['apt', 'install']
 }
 
 __spec__['Solus'] = {
@@ -66,7 +66,7 @@ __spec__['Solus'] = {
                      'libwebkitgtk-3.0-0'
                      'libwebkitgtk-3.0-dev'
                      ], 
-    'pkg_install': 'eopkg install'
+    'pkg_install': ['eopkg', 'install']
 }
 
 
