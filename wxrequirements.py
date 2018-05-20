@@ -9,6 +9,7 @@ import sys
 
 PY_MAJOR = sys.version_info.major
 PY_MINOR = sys.version_info.minor
+PY_VER = '{0}{1}'.format(PY_MAJOR, PY_MINOR)
 if PY_MAJOR == 3:
     python_dev = 'python3-dev'
 elif PY_MAJOR == 2:
