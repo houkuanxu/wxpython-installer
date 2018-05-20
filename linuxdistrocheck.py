@@ -13,7 +13,14 @@ distros = {
                      'VERSION_ID': '16.10'},
 
     "Ubuntu 16.04": {'NAME': 'Ubuntu',
-                     'VERSION_ID': '16.04'},                 
+                     'VERSION_ID': '16.04'},
+
+    "Linux Mint 18": {'NAME': 'Linux Mint',
+                     'ID_LIKE': 'ubuntu',
+                     'VERSION_CODENAME': 'sylvia'},
+                     
+    "Solus": {'NAME': 'Solus',
+                      'ID': 'solus'},
 }
 
 
@@ -26,8 +33,8 @@ def get_os_release_results():
                 lines = f.readlines()
         except FileNotFoundError as e:
             print(e)
-        
-        result = {} 
+
+        result = {}
         for line in lines:
             k, v = line.split('=')
             v = v.replace('\n', '')
@@ -37,7 +44,7 @@ def get_os_release_results():
 
 
 def find_distro():
-    
+
     for result in get_os_release_results():
         logging.debug(result)
         for distro_name, distro_validators in distros.items():
@@ -51,7 +58,7 @@ def find_distro():
                     logging.debug('Not Found: "{0}" key in file'.format(validator))
                     break
                 logging.debug('Found: "{0}" key in file'.format(validator))
-                logging.debug('Check Match: "{0}" == "{1}"'.format(value, result[validator]))                
+                logging.debug('Check Match: "{0}" == "{1}"'.format(value, result[validator]))
                 if result[validator] != value:
                     match = None
                     logging.debug('No Match: "{0}" == "{1}"'.format(value, result[validator]))

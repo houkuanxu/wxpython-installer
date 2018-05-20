@@ -43,7 +43,6 @@ def fail(msg=""):
 def log(msg=""):
     """Output msg message"""
     print('[INFO] ' + msg)
-    print('[INFO] ' + 'Exiting...')
 
 
 def app_path():
@@ -128,7 +127,8 @@ class Install(install):
         # any requirement which failed to be installed. In this
         # this situation, the subsequent build should probably fail.
         for req in spec['requirements']:
-            subprocess.call(['sudo', 'apt', 'install', '{0}'.format(req)])
+            cmd = ['sudo'] + spec['pkg_install'] + ['{0}'.format(req)]
+            subprocess.call(cmd)
 
         create_app_dirs()
         os.chdir(app_path())
