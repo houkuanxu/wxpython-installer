@@ -128,7 +128,9 @@ class Install(install):
 
         # Build the wheel
         subprocess.call([PY_EXE, '-m', 'pip', 'wheel', '-v', WX_TAR, '2>&1', '| tee build.log'])
-        # os.chdir(WX_DIR)
+        
+        # Install
+        
 
 
 class TestCommand(Command):
