@@ -1,6 +1,4 @@
 import logging
-import subprocess
-import os.path
 
 os_release_path = [
     '/etc/os-release',
@@ -9,17 +7,21 @@ os_release_path = [
 
 
 distros = {
-    "Ubuntu 16.10": {'NAME': 'Ubuntu',
+    'Ubuntu 16.10': {'NAME': 'Ubuntu',
                      'VERSION_ID': '16.10'},
 
-    "Ubuntu 16.04": {'NAME': 'Ubuntu',
+    'Ubuntu 16.04': {'NAME': 'Ubuntu',
                      'VERSION_ID': '16.04'},
 
-    "Linux Mint 18": {'NAME': 'Linux Mint',
-                     'ID_LIKE': 'ubuntu',
-                     'VERSION_CODENAME': 'sylvia'},
-                     
-    "Solus": {'NAME': 'Solus',
+    'Linux Mint 18': {'NAME': 'Linux Mint',
+                      'ID_LIKE': 'ubuntu',
+                      'VERSION_CODENAME': 'sylvia'},
+
+    'elementary OS': {'NAME': 'elementary OS',
+                      'VERSION_CODENAME': 'loki',
+                      'ID_LIKE': 'ubuntu'},
+
+    'Solus': {'NAME': 'Solus',
                       'ID': 'solus'},
 }
 

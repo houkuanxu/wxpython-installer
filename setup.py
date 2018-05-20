@@ -84,7 +84,7 @@ class Build(build):
         if is_root():
             fail('Running with root privileges. Try without sudo?')
 
-        self.run_command('flake8')
+        subprocess.call(['flake8', '--append-config=.flake8.ini'])
 
 
 class Install(install):
@@ -137,10 +137,10 @@ class Install(install):
         pip_download('wxpython')
 
         # Build the wheel
-        subprocess.call([PY_EXE, '-m', 'pip', 'wheel', '-v', WX_TAR, '2>&1', '| tee build.log'])
-        
+        cmd_build = [PY_EXE, '-m', 'pip', 'wheel', '-v', WX_TAR]
+        subprocess.call(cmd_build)
+
         # Install
-        
 
 
 class TestCommand(Command):
@@ -153,7 +153,7 @@ class TestCommand(Command):
         return
 
     def run(self):
-        self.run_command('flake8')
+        subprocess.call(['flake8', '--append-config=.flake8.ini'])
 
 
 def run_setup():
@@ -170,7 +170,7 @@ def run_setup():
           author=__author__,
           url=__homepage__,
           license='MIT',
-          packages=find_packages(),
+          packages=find_packages(exclude=['tests*']),
           install_requires=[],
           classifiers=__classifiers__,
           test_suite='tests',

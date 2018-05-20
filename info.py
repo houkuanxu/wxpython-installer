@@ -3,8 +3,8 @@ from os import path
 __projectname__ = 'wxpython4-linux-installer'
 __version__ = '0.0.1'
 __homepage__ = 'https://github.com/swprojects/wxpython4-linux-installer'
-__author__= 'Simon Wu'
-__description__= 'An unofficial wxPython4 (Phoenix) installer for Linux distribution'
+__author__ = 'Simon Wu'
+__description__ = 'An unofficial wxPython4 (Phoenix) installer for Linux distribution'
 
 __classifiers__ = [
     'Development  Status :: 1 - Planning',
@@ -23,7 +23,7 @@ try:
         __readme__ = readme_file.read()
 except Exception:
     __readme__ = ''
-    
+
 try:
     with open(path.join(here, 'HISTORY.rst'), encoding='utf-8') as history_file:
         __history__ = history_file.read().replace('.. :changelog:', '')

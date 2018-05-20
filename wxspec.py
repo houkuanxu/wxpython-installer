@@ -4,7 +4,6 @@ Requirements alphabetical order (A-Z)
 https://wxpython.org/Phoenix/snapshot-builds/linux/gtk3/ubuntu-16.04/
 """
 
-
 import sys
 
 PY_MAJOR = sys.version_info.major
@@ -20,8 +19,7 @@ elif PY_MAJOR == 2:
 
 __spec__ = {}
 __spec__['Ubuntu 16.04'] = {
-    'requirements': [
-                     python_dev,
+    'requirements': [python_dev,
                      'libgtk-3.0',
                      'libgtk-3-dev',
                      'freeglut3',
@@ -40,18 +38,19 @@ __spec__['Ubuntu 16.04'] = {
                      'libpng12-dev',
                      'libjpeg-dev',
                      'libwebkitgtk-3.0-0',
-                     'libwebkitgtk-3.0-dev',
-                     ], 
-    'pkg_install': ['apt', 'install']
+                     'libwebkitgtk-3.0-dev'],
+    'pkg_install': ['apt', 'install'],
+    'extra_cmds': [],
 }
 
 __spec__['Solus'] = {
-    'requirements': [
-                     python_devel,
+    'requirements': [python_devel,
                      'libgtk-3',
                      'libgtk-3-devel',
                      'freeglut',
-                     'freeglut-dev',
+                     'freeglut-devel',
+                     'libglu',
+                     'libglu-devel',    # Mesa opengl
                      'libtiff',
                      'libtiff-devel',
                      'libnotify',
@@ -59,16 +58,16 @@ __spec__['Solus'] = {
                      'sdl1',
                      'sdl1-devel',
                      'libsm',
-                     'libsm-dev',
+                     'libsm-devel',
                      'gstreamer-1.0-plugins-base',
                      'gstreamer-1.0-plugins-base-devel',
                      'libpng',
                      'libpng-devel',
                      'libjpeg-dev',
-                     'libwebkitgtk-3',
-                     'libwebkitgtk-3-devel',
-                     ], 
-    'pkg_install': ['eopkg', 'install']
+                     'libwebkit3-gtk',
+                     'libwebkit3-gtk-devel'],
+    'pkg_install': ['eopkg', 'install'],
+    'extra_cmds': [['sudo', 'eopkg', 'it', '-c', 'system.devel']]  # enables build-essential equivalent
 }
 
 
