@@ -26,7 +26,7 @@ WX_TAR = WX_DIR + '.tar.gz'
 
 
 def on_linux():
-    return sys.platform == 'linux'
+    return sys.platform.startswith('linux')
 
 
 def is_root():
@@ -104,9 +104,13 @@ class Install(install):
 
         wheel = wxwheels.get_wheel(distro)
         if wheel:
-            # Download the wheel
+            # Download the wheel in current directory ( at the moment)
+            # create_app_dirs()
+            # os.chdir(app_path())
             pip_download(wheel)
-            # Should install here
+            # install here
+            # Probably install directly from URL, rather than
+            # download first.
             return
 
         log('Could not find a suitable wheel for your distribution.')

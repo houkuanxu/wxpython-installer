@@ -50,6 +50,10 @@ Other Notes:
     
 TODO:
 
+    Doesn't check if wxpython is already installed
+    
+    Assumes GTK3
+    
     Support more distributions
     
     Include better documentation and docstrings
