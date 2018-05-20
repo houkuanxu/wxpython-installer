@@ -48,7 +48,10 @@ __wheel__['Cent OS 7'] = {
     '36': WHEEL_PATH['Cent OS 7'] + 'wxPython-4.0.0a3.dev3059+4a5c5d9-cp36-cp36m-linux_x86_64.whl',
     '35': WHEEL_PATH['Cent OS 7'] + 'wxPython-4.0.0a3.dev3059+4a5c5d9-cp35-cp35m-linux_x86_64.whl',
     '27': WHEEL_PATH['Cent OS 7'] + 'wxPython-4.0.0a3.dev3059+4a5c5d9-cp27-cp27mu-linux_x86_64.whl',
-}   
+}
+
+__wheel__['Linux Mint 18'] = __wheel__['Ubuntu 16.04']
+
 
 
 def get_wheel(distro):
