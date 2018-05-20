@@ -30,6 +30,14 @@ What does this package do?
 
 Other Notes:
 
+    Is wxpython4-linux-installer an appropriate name? Should I explicitly state
+    it is unofficial?
+    
+    Build only runs flake8. Nothing else.
+    
+    Install downloads dependencies and builds wheel. But doesn't yet actually
+    install the wheel.
+    
     If user installs this package but then uninstalls wxPython directly.
     Other packages which rely on this package will see that this package is already
     installed therefore think wxPython is still installed. Need to handle this.
@@ -65,7 +73,7 @@ Example setup.py
 Installation
 ============
 
-        **pip install wxpython4-linux-installer**
+        **pip install wxpython4-linux-installer** Not possible yet
 
 .. _pypi: https://pypi.org/project/wx/#description
 
