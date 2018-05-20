@@ -43,6 +43,32 @@ __spec__['Ubuntu 16.04'] = {
     'pkg_install': 'apt install'
 }
 
+__spec__['Solus'] = {
+    'requirements': [
+                     python_dev,
+                     'libgtk-3.0'
+                     'libgtk-3-dev'
+                     'freeglut3'
+                     'freeglut3-dev'
+                     'libtiff5'
+                     'libtiff5-dev'
+                     'libnotify4'
+                     'libnotify-dev'
+                     'libsdl1.2debian'
+                     'libsdl1.2-dev'
+                     'libsm6'
+                     'libsm-dev'
+                     'libgstreamer-plugins-base1.0-0'
+                     'libgstreamer-plugins-base1.0-dev'
+                     'libpng12-0'
+                     'libpng12-dev'
+                     'libjpeg-dev'
+                     'libwebkitgtk-3.0-0'
+                     'libwebkitgtk-3.0-dev'
+                     ], 
+    'pkg_install': 'eopkg install'
+}
+
 
 def get_spec(distro):
     try:

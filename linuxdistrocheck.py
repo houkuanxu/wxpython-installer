@@ -18,6 +18,9 @@ distros = {
     "Linux Mint 18": {'NAME': 'Linux Mint',
                      'ID_LIKE': 'ubuntu',
                      'VERSION_CODENAME': 'sylvia'},
+                     
+    "Solus": {'NAME': 'Solus',
+                      'ID': 'solus'},
 }
 
 
