@@ -7,12 +7,16 @@ wxpython4-linux-installer
 ----
 
 
-.. image:: https://img.shields.io/pypi/v/nine.svg   :alt: PyPI
+.. image:: https://badge.fury.io/py/pypi.svg
 
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
+    :target: https://opensource.org/licenses/MIT
 
 .. image:: https://travis-ci.org/swprojects/wxpython4-linux-installer.svg?branch=master
+    :target: https://travis-ci.org/swprojects/wxpython4-linux-installer
 
+.. image:: https://travis-ci.org/swprojects/wxpython4-linux-installer.svg?branch=dev
+    :target: https://travis-ci.org/swprojects/wxpython4-linux-installer
 
 
 
