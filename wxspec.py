@@ -42,7 +42,8 @@ __spec__['Ubuntu 16.04'] = {
                      'libwebkitgtk-3.0-0',
                      'libwebkitgtk-3.0-dev',
                      ], 
-    'pkg_install': ['apt', 'install']
+    'pkg_install': ['apt', 'install'],
+    'extra_cmds': [],
 }
 
 __spec__['Solus'] = {
@@ -51,7 +52,9 @@ __spec__['Solus'] = {
                      'libgtk-3',
                      'libgtk-3-devel',
                      'freeglut',
-                     'freeglut-dev',
+                     'freeglut-devel',
+                     'libglu',
+                     'libglu-devel',    # Mesa opengl
                      'libtiff',
                      'libtiff-devel',
                      'libnotify',
@@ -59,16 +62,19 @@ __spec__['Solus'] = {
                      'sdl1',
                      'sdl1-devel',
                      'libsm',
-                     'libsm-dev',
+                     'libsm-devel',
                      'gstreamer-1.0-plugins-base',
                      'gstreamer-1.0-plugins-base-devel',
                      'libpng',
                      'libpng-devel',
                      'libjpeg-dev',
-                     'libwebkitgtk-3',
-                     'libwebkitgtk-3-devel',
+                     'libwebkit3-gtk',
+                     'libwebkit3-gtk-devel',
                      ], 
-    'pkg_install': ['eopkg', 'install']
+    'pkg_install': ['eopkg', 'install'],
+    'extra_cmds': [
+                  ['sudo', 'eopkg', 'it', '-c', 'system.devel'],  # build-essentials equivalent
+                  ]   
 }
 
 
