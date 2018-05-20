@@ -89,6 +89,6 @@ def get_spec(distro):
 
 def get_wheel(distro):
     try:
-        return __wheel__[distro]
+        return __wheel__[distro][PY_VER]
     except KeyError:
         return None
