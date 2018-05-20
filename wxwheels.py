@@ -51,6 +51,7 @@ __wheel__['Cent OS 7'] = {
 }
 
 __wheel__['Linux Mint 18'] = __wheel__['Ubuntu 16.04']
+__wheel__['elementary OS'] = __wheel__['Ubuntu 16.04']
 
 
 
