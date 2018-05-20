@@ -137,7 +137,8 @@ class Install(install):
         pip_download('wxpython')
 
         # Build the wheel
-        subprocess.call([PY_EXE, '-m', 'pip', 'wheel', '-v', WX_TAR, '2>&1', '| tee build.log'])
+        cmd_build = [PY_EXE, '-m', 'pip', 'wheel', '-v', WX_TAR]
+        subprocess.call(cmd_build)
         
         # Install
         
