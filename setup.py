@@ -43,7 +43,6 @@ def fail(msg=""):
 def log(msg=""):
     """Output msg message"""
     print('[INFO] ' + msg)
-    print('[INFO] ' + 'Exiting...')
 
 
 def app_path():
