@@ -1,6 +1,5 @@
 import logging
 import subprocess
-from shutil import which
 import os.path
 
 os_release_path = [
