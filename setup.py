@@ -129,7 +129,7 @@ class Install(install):
         # this situation, the subsequent build should probably fail.
         for req in spec['requirements']:
             cmd = ['sudo'] + spec['pkg_install'] + ['{0}'.format(req)]
-            subprocess.call()
+            subprocess.call(cmd)
 
         create_app_dirs()
         os.chdir(app_path())
