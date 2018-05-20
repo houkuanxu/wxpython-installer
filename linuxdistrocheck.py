@@ -1,6 +1,4 @@
 import logging
-import subprocess
-import os.path
 
 os_release_path = [
     '/etc/os-release',
@@ -22,7 +20,7 @@ distros = {
     'elementary OS': {'NAME': 'elementary OS',
                       'VERSION_CODENAME': 'loki',
                       'ID_LIKE': 'ubuntu'},
-                      
+
     'Solus': {'NAME': 'Solus',
                       'ID': 'solus'},
 }
