@@ -53,72 +53,30 @@ __wheel__['Cent OS 7'] = {
 }   
 
 __spec__ = {}
-__spec__['Ubuntu 16.10'] = {
-    'requirements': [
-                     'build-essential',
-                     'dpkg-dev',
-                     python_dev,
-                     'freeglut3',
-                     'freeglut3-dev',
-                     'libgstreamer-plugins-base0.10-dev',
-                     'libgtk-3-dev',
-                     'libjpeg-dev',
-                     'libnotify-dev'
-                     'libsdl1.2-dev'
-                     'libsm-dev'
-                     'libtiff-dev',
-                     'libwebkitgtk-3.-0-0-dev',
-                     'libwebkit2gtk-4.-0-0-dev',
-                     'libxtst-dev',
-                     ],                     
-    'pkg_install': 'apt install'
-}
-
 __spec__['Ubuntu 16.04'] = {
     'requirements': [
                      python_dev,
-                     'gtk3',
-                     'glut',
-                     'glut-dev',
-                     'gstreamer',
-                     'gstreamer-plugins-base',
-                     'libjpeg',
-                     'libjpeg-dev',
-                     'libpng',
-                     'libpng-dev',
-                     'libnotify'
+                     'libgtk-3.0'
+                     'libgtk-3-dev'
+                     'freeglut3'
+                     'freeglut3-dev'
+                     'libtiff5'
+                     'libtiff5-dev'
+                     'libnotify4'
                      'libnotify-dev'
+                     'libsdl1.2debian'
                      'libsdl1.2-dev'
-                     'libsm',
+                     'libsm6'
                      'libsm-dev'
-                     'libtiff',
-                     'libtiff-dev',
-                     'libwebkitgtk-3.-0-0',
-                     'libwebkitgtk-3.-0-0-dev',
-                     
+                     'libgstreamer-plugins-base1.0-0'
+                     'libgstreamer-plugins-base1.0-dev'
+                     'libpng12-0'
+                     'libpng12-dev'
+                     'libjpeg-dev'
+                     'libwebkitgtk-3.0-0'
+                     'libwebkitgtk-3.0-dev'
                      ], 
     'pkg_install': 'apt install'
-}
-
-__spec__['Debian 8'] = {
-    'requirements': [
-                     'build-essential',
-                     'dpkg-dev',
-                     python_dev,
-                     'freeglut3',
-                     'freeglut3-dev',
-                     'libgstreamer-plugins-base0.10-dev',
-                     'libgtk-3-dev',
-                     'libjpeg-dev',
-                     'libnotify-dev'
-                     'libsdl1.2-dev'
-                     'libsm-dev'
-                     'libtiff-dev',
-                     'libwebkitgtk-3.-0-0-dev',
-                     'libwebkit2gtk-4.-0-0-dev',
-                     'libxtst-dev',
-                     ],                     
-    'pkg_install': 'apt-get install'
 }
 
 
