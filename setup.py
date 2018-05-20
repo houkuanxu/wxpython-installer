@@ -13,7 +13,8 @@ from setuptools import setup, find_packages, Command
 from setuptools.command.install import install
 
 import linuxdistrocheck
-import wxrequirements
+import wxspec
+import wxwheels
 from info import (__projectname__, __version__, __homepage__, __author__,
                   __classifiers__, __readme__, __history__, __description__)
 
@@ -101,12 +102,17 @@ class Install(install):
         if not distro:
             fail('Could not find a supported Linux distribution')
 
-        wheel = wxrequirements.get_wheel(distro)
-        if not wheel:
-            log('Could not find a suitable wheel for your distribution.')
-            log('Try to build from source.')
+        wheel = wxwheels.get_wheel(distro)
+        if wheel:
+            # Download the wheel
+            pip_download(wheel)
+            # Should install here
+            return
 
-        spec = wxrequirements.get_spec(distro)
+        log('Could not find a suitable wheel for your distribution.')
+        log('Try to download source and build.')
+
+        spec = wxspec.get_spec(distro)
         if not spec:
             fail('Could not find a specification for your distribution.')
 
