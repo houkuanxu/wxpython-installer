@@ -15,7 +15,7 @@ if PY_MAJOR == 3:
     python_devel = 'python3-devel'
 elif PY_MAJOR == 2:
     python_dev = 'python-dev'
-    python_dev = 'python-devel'
+    python_devel = 'python-devel'
 
 
 __spec__ = {}
