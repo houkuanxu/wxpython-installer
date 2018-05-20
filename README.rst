@@ -7,8 +7,6 @@ wxpython4-linux-installer
 ----
 
 
-.. image:: https://badge.fury.io/py/pypi.svg
-
 .. image:: https://img.shields.io/badge/License-MIT-yellow.svg
     :target: https://opensource.org/licenses/MIT
 
