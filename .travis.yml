@@ -9,4 +9,4 @@ install:
   - pip install flake8
   - pip install flake8-docstrings
 script:
-  - python setup test
+  - python setup.py test
