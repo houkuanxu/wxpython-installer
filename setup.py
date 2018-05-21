@@ -104,9 +104,10 @@ class Install(install):
         if not distro:
             fail('Could not find a supported Linux distribution')
 
+        log('Finding a wheel for your distribution.')
         wheel = wxwheels.get_wheel(distro)
         if wheel:
-            # Download the wheel in current directory ( at the moment)
+            # Download the wheel in current directory (at the moment)
             # create_app_dirs()
             # os.chdir(app_path())
             pip_download(wheel)
@@ -181,4 +182,5 @@ def run_setup():
           cmdclass=cmd_classes)
 
 
-run_setup()
+if __name__ == '__main__':
+    run_setup()
