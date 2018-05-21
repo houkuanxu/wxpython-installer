@@ -54,17 +54,36 @@ def app_path():
     return path
 
 
+def pip_check_wx_version():
+    """
+    Check if wxPython is already installed
+
+    :returns: version string or None if not installed
+    """
+    cmd = [PY_EXE, '-m', 'pip', 'show', 'wxPython']
+    print('[PIP]  ' + ' '.join(cmd))
+    output = subprocess.check_output(cmd)
+    if not output:
+        return None
+    output_str = str(output)    
+    ver_start = output_str.index('Version:') + 8
+    ver_end = ver_start + output_str[ver_start:].index('\\r\\n')
+    version = output_str[ver_start:ver_end]
+    version = version.replace(' ', '')
+    return version
+
+
+def pip_download(arg):
+    cmd = [PY_EXE, '-m', 'pip', 'download', arg]
+    print('[PIP]  ' + ' '.join(cmd))
+    subprocess.call(cmd)
+
+
 def pip_install(arg, upgrade=False):
     if upgrade:
         cmd = [PY_EXE, '-m', 'pip', 'install', '-U', arg]
     else:
         cmd = [PY_EXE, '-m', 'pip', 'install', arg]
-    print('[PIP]  ' + ' '.join(cmd))
-    subprocess.call(cmd)
-
-
-def pip_download(arg):
-    cmd = [PY_EXE, '-m', 'pip', 'download', arg]
     print('[PIP]  ' + ' '.join(cmd))
     subprocess.call(cmd)
 
