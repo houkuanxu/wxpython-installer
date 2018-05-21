@@ -7,22 +7,66 @@ os_release_path = [
 
 
 distros = {
+
+    'Ubuntu 18.10': {'NAME': 'Ubuntu',
+                     'VERSION_ID': '18.10'},
+
+    'Ubuntu 18.04': {'NAME': 'Ubuntu',
+                     'VERSION_ID': '18.04'},
+
     'Ubuntu 16.10': {'NAME': 'Ubuntu',
                      'VERSION_ID': '16.10'},
 
     'Ubuntu 16.04': {'NAME': 'Ubuntu',
                      'VERSION_ID': '16.04'},
 
-    'Linux Mint 18': {'NAME': 'Linux Mint',
-                      'ID_LIKE': 'ubuntu',
-                      'VERSION_CODENAME': 'sylvia'},
+    'Ubuntu 14.10': {'NAME': 'Ubuntu',
+                     'VERSION_ID': '14.10'},
 
-    'elementary OS': {'NAME': 'elementary OS',
-                      'VERSION_CODENAME': 'loki',
-                      'ID_LIKE': 'ubuntu'},
+    'Ubuntu 14.04': {'NAME': 'Ubuntu',
+                     'VERSION_ID': '14.04'},
+
+    'Debian 9': {'NAME': 'Debian GNU/Linux',
+                 'VERSION_ID': '9',
+                 'ID': 'debian'},
+
+    'Debian 8': {'NAME': 'Debian GNU/Linux',
+                 'VERSION_ID': '8',
+                 'ID': 'debian'},
+
+    'Fedora 28': {'NAME': 'Fedora',
+                  'ID': 'fedora',
+                  'VERSION_ID': '28'},
+
+    'Fedora 27': {'NAME': 'Fedora',
+                  'ID': 'fedora',
+                  'VERSION_ID': '27'},
+
+    'Fedora 26': {'NAME': 'Fedora',
+                  'ID': 'fedora',
+                  'VERSION_ID': '26'},
+
+    'Fedora 24': {'NAME': 'Fedora',
+                  'ID': 'fedora',
+                  'VERSION_ID': '24'},
+
+    'Fedora 23': {'NAME': 'Fedora',
+                  'ID': 'fedora',
+                  'VERSION_ID': '23'},
+
+    'CentOS 7': {'NAME': 'CentOS Linux',
+                 'VERSION_ID': '7'},
+
+    'LinuxMint 18': {'NAME': 'Linux Mint',
+                     'ID_LIKE': 'ubuntu',
+                     'VERSION_CODENAME': 'sylvia'},
+
+    'elementaryOS Loki': {'NAME': 'elementary OS',
+                          'VERSION_CODENAME': 'loki',
+                          'ID_LIKE': 'ubuntu'},
 
     'Solus': {'NAME': 'Solus',
-                      'ID': 'solus'},
+              'ID': 'solus'},
 }
 
 
