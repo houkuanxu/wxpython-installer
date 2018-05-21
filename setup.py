@@ -20,6 +20,9 @@ from info import (__projectname__, __version__, __homepage__, __author__,
 
 
 PY_EXE = sys.executable
+PY_MAJOR = sys.version_info.major
+PY_MINOR = sys.version_info.minor
+PY_VER = '{0}{1}'.format(PY_MAJOR, PY_MINOR)
 WX_VER = '4.0.1'
 WX_DIR = 'wxPython-{0}'.format(WX_VER)
 WX_TAR = WX_DIR + '.tar.gz'
