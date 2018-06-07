@@ -31,7 +31,7 @@ For example `install_requires=['wxpython4-linux-installer']`
 
 If you just want to download wxpython, you can just run the command below:
 
-    - `sudo pip install wxpython4-linux-installer`
+    `sudo pip install wxpython4-linux-installer`
 
 # Note
 
