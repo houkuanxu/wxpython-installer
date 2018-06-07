@@ -1,7 +1,7 @@
 """
 """
-
-from setup import WX_VER, PY_VER
+from __future__ import absolute_import, division, print_function
+from wxpython4_linux_installer.info import WX_VER, PY_VER
 
 WHEEL_EXTRAS_URL = 'https://extras.wxpython.org/wxPython4/extras/linux/{0}'
 WHEEL_BASE_URL_GTK3 = WHEEL_EXTRAS_URL.format('gtk3')

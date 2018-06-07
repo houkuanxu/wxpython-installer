@@ -1,9 +1,8 @@
+from __future__ import absolute_import, division, print_function
 import logging
 
-os_release_path = [
-    '/etc/os-release',
-    '/usr/lib/os-release'
-]
+os_release_path = ['/etc/os-release',
+                   '/usr/lib/os-release']
 
 
 distros = {
