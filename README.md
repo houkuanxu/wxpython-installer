@@ -25,7 +25,7 @@ See [wxpython linux build](https://wxpython.org/blog/2017-08-17-builds-for-linux
 
     - Go to link below to see which wheels are available
       
-      [linux wheels](https://extras.wxpython.org/wxPython4/extras/linux/gtk3)
+[linux wheels](https://extras.wxpython.org/wxPython4/extras/linux/gtk3)
 
 # Usage
 
