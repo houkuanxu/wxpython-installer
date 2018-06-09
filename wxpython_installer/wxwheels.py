@@ -1,13 +1,13 @@
 """
 """
 from __future__ import absolute_import, division, print_function
-from wxpython4_linux_installer.info import WX_VER, PY_VER
+from wxpython_installer.info import WX_VER, PY_VER
 
 WHEEL_EXTRAS_URL = 'https://extras.wxpython.org/wxPython4/extras/linux/{0}'
 WHEEL_BASE_URL_GTK3 = WHEEL_EXTRAS_URL.format('gtk3')
 
-distro_like = {'LinuxMint 18': 'Ubuntu 16.04',
-               'elementaryOS Loki': 'Ubuntu 16.04'}
+# distro_like = {'LinuxMint 18': 'Ubuntu 16.04',
+               # 'elementaryOS Loki': 'Ubuntu 16.04'}
 
 
 def get_wheel_filename():
@@ -21,10 +21,10 @@ def get_wheel_filename():
 
 def get_wheel(distro):
     """Return the full URL path to the wheel"""
-    try:
-        distro = distro_like[distro]
-    except KeyError:
-        pass
+    # try:
+        # distro = distro_like[distro]
+    # except KeyError:
+        # pass
     d = distro.replace(' ', '-')
     d = d.lower()
     f = get_wheel_filename()
