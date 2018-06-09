@@ -18,8 +18,12 @@ See [wxpython linux build](https://wxpython.org/blog/2017-08-17-builds-for-linux
 
    - If on linux, search for any matching wheel available on builds. If one exists,
      download and install the wxpython wheel.
-   - Otherwise default by trying to install ```pip install wxpython```
+   - Otherwise defaults by trying to install via ```pip install wxpython```
 
+   
+# Which linux distributions/releases are supported?
+
+    - Go to [linux wheels](https://extras.wxpython.org/wxPython4/extras/linux/gtk3) to see which wheels are available
 
 # Usage
 
