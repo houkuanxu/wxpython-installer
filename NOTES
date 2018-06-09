@@ -1,0 +1,8 @@
+Note:: use ```python setup.py sdist``` for building package
+
+```wxpython-installer``` never actually installs as a package itself so
+pip never detects ```wxpython-installer``` because it's not in site-packages
+
+This means we don't need to worry if the user uninstalls ```wxpython``` separately
+because ```wxpython-installer``` is never actually installed on the system
+and won't stop on the ```wxpython-installer``` requirement already met"
