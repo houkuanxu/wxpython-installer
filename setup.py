@@ -1,4 +1,4 @@
-# wxpython4-linux-installer
+# wxpython-installer
 
 from __future__ import absolute_import, division, print_function
 import sys

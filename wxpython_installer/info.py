@@ -2,12 +2,12 @@ from __future__ import absolute_import, division, print_function
 import sys
 from os import path
 
-__projectname__ = 'wxpython4-linux-installer'
+__projectname__ = 'wxpython-installer'
 __version__ = '0.1.0'
-__homepage__ = 'https://github.com/swprojects/wxpython4-linux-installer'
+__homepage__ = 'https://github.com/swprojects/wxpython-installer'
 __author__ = 'Simon Wu'
 __author_email__ = 'swprojects@runbox.com'
-__description__ = 'An unofficial wxPython4 (Phoenix) installer for Linux distribution'
+__description__ = 'A wxPython installer for Linux distribution'
 
 __classifiers__ = [
     'Intended Audience :: Developers',

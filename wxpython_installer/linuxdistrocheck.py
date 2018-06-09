@@ -93,8 +93,6 @@ def find_distro():
     for result in get_os_release_results():
         logging.debug(result)
         for distro_name, distro_validators in distros.items():
-            logging.info("Checking for distribution: %s" % distro_name)
-            logging.debug("Distribution validators: %s" % distro_validators)
             match = None
             for validator, value in distro_validators.items():
                 logging.debug('Check: "{0}" key in file'.format(validator))
