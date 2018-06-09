@@ -1,4 +1,4 @@
-# wxpython4-linux-installer
+# wxpython-installer
 
 
 # A wxPython Phoenix installer.
@@ -16,22 +16,29 @@ See [wxpython linux build](https://wxpython.org/blog/2017-08-17-builds-for-linux
 # What does this package do?
 
 
-   - Search for any matching wheel available on snapshot builds. If one exists,
+   - If on linux, search for any matching wheel available on builds. If one exists,
      download and install the wxpython wheel.
+   - Otherwise defaults by trying to install via ```pip install wxpython```
 
+   
+# Which linux distributions/releases are supported?
+
+    - Go to link below to see which wheels are available
+      
+[linux wheels](https://extras.wxpython.org/wxPython4/extras/linux/gtk3)
 
 # Usage
 
 If you want your pypi to install wxpython, you should add `wxpython4-linux-installer` in your setup.py requirements.
 
-For example `install_requires=['wxpython4-linux-installer']`
+For example `install_requires=['wxpython-installer']`
 
 
 # Download
 
 If you just want to download wxpython, you can just run the command below:
 
-    sudo pip install wxpython4-linux-installer
+    sudo pip install wxpython-installer
 
 # Note
 

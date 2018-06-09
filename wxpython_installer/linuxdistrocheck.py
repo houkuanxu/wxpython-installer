@@ -7,20 +7,20 @@ os_release_path = ['/etc/os-release',
 
 distros = {
 
-    'Ubuntu 18.10': {'NAME': 'Ubuntu',
-                     'VERSION_ID': '18.10'},
+    # 'Ubuntu 18.10': {'NAME': 'Ubuntu',
+                     # 'VERSION_ID': '18.10'},
 
-    'Ubuntu 18.04': {'NAME': 'Ubuntu',
-                     'VERSION_ID': '18.04'},
+    # 'Ubuntu 18.04': {'NAME': 'Ubuntu',
+                     # 'VERSION_ID': '18.04'},
 
-    'Ubuntu 16.10': {'NAME': 'Ubuntu',
-                     'VERSION_ID': '16.10'},
+    # 'Ubuntu 16.10': {'NAME': 'Ubuntu',
+                     # 'VERSION_ID': '16.10'},
 
     'Ubuntu 16.04': {'NAME': 'Ubuntu',
                      'VERSION_ID': '16.04'},
 
-    'Ubuntu 14.10': {'NAME': 'Ubuntu',
-                     'VERSION_ID': '14.10'},
+    # 'Ubuntu 14.10': {'NAME': 'Ubuntu',
+                     # 'VERSION_ID': '14.10'},
 
     'Ubuntu 14.04': {'NAME': 'Ubuntu',
                      'VERSION_ID': '14.04'},
@@ -56,16 +56,16 @@ distros = {
     'CentOS 7': {'NAME': 'CentOS Linux',
                  'VERSION_ID': '7'},
 
-    'LinuxMint 18': {'NAME': 'Linux Mint',
-                     'ID_LIKE': 'ubuntu',
-                     'VERSION_CODENAME': 'sylvia'},
+    # 'LinuxMint 18': {'NAME': 'Linux Mint',
+                     # 'ID_LIKE': 'ubuntu',
+                     # 'VERSION_CODENAME': 'sylvia'},
 
-    'elementaryOS Loki': {'NAME': 'elementary OS',
-                          'VERSION_CODENAME': 'loki',
-                          'ID_LIKE': 'ubuntu'},
+    # 'elementaryOS Loki': {'NAME': 'elementary OS',
+                          # 'VERSION_CODENAME': 'loki',
+                          # 'ID_LIKE': 'ubuntu'},
 
-    'Solus': {'NAME': 'Solus',
-              'ID': 'solus'},
+    # 'Solus': {'NAME': 'Solus',
+              # 'ID': 'solus'},
 }
 
 
@@ -93,8 +93,8 @@ def find_distro():
     for result in get_os_release_results():
         logging.debug(result)
         for distro_name, distro_validators in distros.items():
-            logging.info("Checking for distribution: %s" % distro_name)
-            logging.debug("Distribution validators: %s" % distro_validators)
+            logging.info('Checking for distribution: %s' % distro_name)
+            logging.debug('Distribution validators: %s' % distro_validators)
             match = None
             for validator, value in distro_validators.items():
                 logging.debug('Check: "{0}" key in file'.format(validator))

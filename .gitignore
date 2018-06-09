@@ -1,1 +1,3 @@
 *.pyc
+dist/
+wxpython_installer.egg-info/
