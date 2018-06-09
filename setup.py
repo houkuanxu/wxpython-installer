@@ -6,11 +6,11 @@ from distutils.command.build import build
 from setuptools import setup, find_packages, Command
 from setuptools.command.install import install
 from subprocess import call, check_output, CalledProcessError
-from wxpython4_linux_installer.linuxdistrocheck import find_distro
-from wxpython4_linux_installer.wxwheels import get_wheel
-from wxpython4_linux_installer.info import (__projectname__, __version__, __homepage__, __author__,
-                                            __classifiers__, __readme__, __history__, __description__,
-                                            __author_email__, PY_EXE)
+from wxpython_installer.linuxdistrocheck import find_distro
+from wxpython_installer.wxwheels import get_wheel
+from wxpython_installer.info import (__projectname__, __version__, __homepage__, __author__,
+                                     __classifiers__, __readme__, __history__, __description__,
+                                     __author_email__, PY_EXE)
 
 
 def on_linux():
@@ -81,22 +81,21 @@ class Install(install):
 
     def run(self):
         if not on_linux():
-            fail('Cannot install on non-linux platform')
+            log('Not on linux. Installing directly from pypi.')
+            pip_install('wxpython')
+            return
 
         distro = find_distro()
-        if not distro:
-            fail('Could not find a supported Linux distribution')
+        if distro:
+            log('Finding a wheel for your distribution.')
+            wheel = get_wheel(distro)
+            if wheel:
+                pip_install(wheel)
+                return
 
-        log('Finding a wheel for your distribution.')
-        wheel = get_wheel(distro)
-        if wheel:
-            pip_install(wheel)
-            return
-            install.run(self)
-            return
-
-        fail('Could not find a suitable wheel for your distribution.')
-        # install.run(self)
+        log('Could not find a suitable wheel for your distribution.')
+        log('Attempting to install directly.')
+        pip_install('wxpython')
         return
 
 
