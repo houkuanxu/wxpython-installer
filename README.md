@@ -23,7 +23,9 @@ See [wxpython linux build](https://wxpython.org/blog/2017-08-17-builds-for-linux
    
 # Which linux distributions/releases are supported?
 
-    - Go to [linux wheels](https://extras.wxpython.org/wxPython4/extras/linux/gtk3) to see which wheels are available)
+    - Go to link below to see which wheels are available
+      
+      [linux wheels](https://extras.wxpython.org/wxPython4/extras/linux/gtk3)
 
 # Usage
 
