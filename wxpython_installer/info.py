@@ -3,7 +3,7 @@ import sys
 from os import path
 
 __projectname__ = 'wxpython-installer'
-__version__ = '0.1.0'
+__version__ = '0.1.1'
 __homepage__ = 'https://github.com/swprojects/wxpython-installer'
 __author__ = 'Simon Wu'
 __author_email__ = 'swprojects@runbox.com'

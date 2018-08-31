@@ -45,14 +45,6 @@ distros = {
                   'ID': 'fedora',
                   'VERSION_ID': '26'},
 
-    'Fedora 24': {'NAME': 'Fedora',
-                  'ID': 'fedora',
-                  'VERSION_ID': '24'},
-
-    'Fedora 23': {'NAME': 'Fedora',
-                  'ID': 'fedora',
-                  'VERSION_ID': '23'},
-
     'CentOS 7': {'NAME': 'CentOS Linux',
                  'VERSION_ID': '7'},
 

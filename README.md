@@ -12,6 +12,9 @@ This is intended for developers who want to distribute their wxPython-based appl
 
 See [wxpython linux build](https://wxpython.org/blog/2017-08-17-builds-for-linux-with-pip/index.html) for why it is difficult to distribute to Linux operating systems.
 
+# Latest + History
+
+   - See HISTORY.rst for details
 
 # What does this package do?
 
