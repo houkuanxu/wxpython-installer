@@ -10,8 +10,8 @@ distros = {
     # 'Ubuntu 18.10': {'NAME': 'Ubuntu',
                      # 'VERSION_ID': '18.10'},
 
-    # 'Ubuntu 18.04': {'NAME': 'Ubuntu',
-                     # 'VERSION_ID': '18.04'},
+    'Ubuntu 18.04': {'NAME': 'Ubuntu',
+                     'VERSION_ID': '18.04'},
 
     # 'Ubuntu 16.10': {'NAME': 'Ubuntu',
                      # 'VERSION_ID': '16.10'},
