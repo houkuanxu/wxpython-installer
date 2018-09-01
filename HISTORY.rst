@@ -3,6 +3,10 @@
 History
 -------
 
+v0.1.2
+
+    - Add support for fetching Ubuntu 18.04 wheel
+    
 v0.1.1
 
     - Bumped wxpython wheel version from 4.0.1 to 4.0.3
